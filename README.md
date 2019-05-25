@@ -2,16 +2,16 @@
 simple save system
 
 ```
-
 ss.opt={
-base:'xyz'
-,gist:true
-,time:300
+ base:''
+ ,time:300
+ ,gist:true
+ ,str:'basic xxxx:yyyy'
 }
-let d=await ss.save(base,[ [key,data],[key2,data2] ])
-d=await ss.load(base,[key,key2])
-
-
+ss.auth() //return boolean
+let d=await ss.save(key,data) //return key
+d=await ss.load(key) //return data
+;
 ```
 
 # def
